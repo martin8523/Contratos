@@ -583,6 +583,7 @@ async function generarPDF(){
   const parrafos = buildParrafos(d);
   parrafos.forEach((p) => {
     y = renderParrafo(doc, p, marginX, y, maxWidth, lineHeight, fontSize, pageBottom, marginTop);
+    y += 2.4;
   });
 
   // Bloque de firma
