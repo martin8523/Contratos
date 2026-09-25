@@ -140,7 +140,7 @@
   .contract-title-row .titulo{ font-weight:700; font-size: 12px; }
   .contract-title-row .socio-cta{ font-size: 11.5px; white-space:nowrap; }
 
-  .sheet p{ margin: 0 0 10px; text-align: justify; }
+  .sheet p{ margin: 0; text-align: justify; }
   .sheet u{ text-decoration: underline; }
   .var{ font-weight:700; }
 
@@ -583,7 +583,6 @@ async function generarPDF(){
   const parrafos = buildParrafos(d);
   parrafos.forEach((p) => {
     y = renderParrafo(doc, p, marginX, y, maxWidth, lineHeight, fontSize, pageBottom, marginTop);
-    y += 2.4;
   });
 
   // Bloque de firma
